@@ -100,10 +100,10 @@ services:
     image: itwye/prometheus_client
     container_name: app_metrics_interface
     volumes:
-      - ./app_metrics_interface:/app/app_metrics_interface
+      - ./your-app:/app/your-app
     command:
       - "python"
-      - "/app/app_metrics_interface/gauge.py"
+      - "/app/your-app/metrics.py"
     restart: unless-stopped
     ports:
       - 8000:8000
