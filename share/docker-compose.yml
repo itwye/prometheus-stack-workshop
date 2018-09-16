@@ -96,9 +96,9 @@ services:
     labels:
       org.label-schema.group: "monitoring"
 
-  app_metrics_interface:
+  your-app:
     image: itwye/prometheus_client
-    container_name: app_metrics_interface
+    container_name: your-app
     volumes:
       - ./your-app:/app/your-app
     command:
