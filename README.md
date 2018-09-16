@@ -31,7 +31,7 @@ vagrant up
 > 在shell脚本安装初始化系统阶段中断，可以使用 `vagrant up --provision` 重新初始化
 
 
-3. VM启动后,登录进入VM.
+3. VM启动后,登录进入VM，启动prometheus stack所有组件。  
 
 ```
 # -------------
@@ -84,7 +84,7 @@ f4d6c073168d        prom/pushgateway             "/bin/pushgateway"       About 
 
 ```
 
-4. 在宿主机浏览器,确保测试环境是否已OK! (VM IP如你更改过了,下面请替换成你的IP)
+4. 在宿主机浏览器,确保测试环境已OK! (VM IP如你更改过了,下面请替换成你的IP)
 
 ```
 (1) Prometheus:   http://192.168.33.118:9090
