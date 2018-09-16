@@ -7,7 +7,7 @@ import socket
 import random
 from prometheus_client import Gauge, Counter, start_http_server
 
-appname = "your-app-name"
+appname = "order"
 hostname = socket.gethostname()
 
 # -------------------------
@@ -17,9 +17,8 @@ hostname = socket.gethostname()
 c = Counter('http_requests_total', 'total number of http requests for application by response status',["app","status"])
 
 def httpRequestTotal():
-    c.labels(appname,"200").inc(random.randint(5,10))
-    c.labels(appname,"502").inc(random.randint(0,3))
-    c.labels(appname,"404").inc(random.randint(0,3))
+    c.labels(appname,200).inc(random.randint(5,10))
+    c.labels(appname,502).inc(random.randint(0,3))
 
 # ------------------------
 # app_used_memory

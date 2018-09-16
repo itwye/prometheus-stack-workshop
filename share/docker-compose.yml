@@ -96,14 +96,14 @@ services:
     labels:
       org.label-schema.group: "monitoring"
 
-  your-app:
+  order:
     image: itwye/prometheus_client
-    container_name: your-app
+    container_name: order
     volumes:
-      - ./your-app:/app/your-app
+      - ./order-app:/app/order-app
     command:
       - "python"
-      - "/app/your-app/metrics.py"
+      - "/app/order-app/metrics.py"
     restart: unless-stopped
     ports:
       - 8000:8000

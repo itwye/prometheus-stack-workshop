@@ -29,12 +29,7 @@ scrape_configs:
     static_configs:
       - targets: ['pushgateway:9091']
 
-  - job_name: 'your-app-group-name'
-    scrape_interval: 5s
-    metrics_path: '/'
-    static_configs:
-      - targets: ['your-app:8000']
-
+        
 # -----------------------------------
 
 alerting:

@@ -10,6 +10,17 @@ groups:
       summary: "host down"
       description: "host {{ $labels.instance }} is down."
 
+- name: app
+  rules:
+  - alert: app-memory-overlimit
+    expr: app_used_memory > 10240000000000
+    for: 20s
+    labels:
+      severity: warning
+    annotations:
+      summary: "app using memory exceeds limits"
+      description: "Instance of {{ $labels.app }} application using memory {{ $value }} exceeds the limit"
+  
 
 
 
