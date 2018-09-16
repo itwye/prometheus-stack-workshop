@@ -121,3 +121,24 @@ vagrant up test-node
 vagrant destroy
 ```
 
+> ### docker-compose 相关命令
+
+1. Create and start containers
+```
+docker-compose up -d
+```
+
+2. Stop containers
+```
+docker-compose stop
+```
+
+3. Start containers
+```
+docker-compose start
+```
+
+4. Stop and remove containers, networks, images, and volumes
+```
+docker-compose down
+```
