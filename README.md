@@ -98,8 +98,9 @@ f4d6c073168d        prom/pushgateway             "/bin/pushgateway"       About 
 (5) Pushgateway:   http://192.168.33.118:9091/
 ```
 
+> ### 附属文档
 
-> ### vagrant管理VM
+> #### vagrant管理VM
 
 1. 使用如下命令关闭VM
 ```
@@ -121,7 +122,7 @@ vagrant up test-node
 vagrant destroy
 ```
 
-> ### docker-compose 相关命令
+> #### docker-compose 相关命令
 
 1. Create and start containers
 ```
