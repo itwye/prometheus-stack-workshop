@@ -19,6 +19,10 @@ apt-get install docker-ce=17.03.2~ce-0~ubuntu-xenial -y --allow-downgrades
 curl -L "https://github.com/docker/compose/releases/download/1.22.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 chmod +x /usr/local/bin/docker-compose
 
+rm -f /etc/docker/daemon.json && curl -sSL https://get.daocloud.io/daotools/set_mirror.sh | sh -s https://azxnenh6.mirror.aliyuncs.com
+systemctl daemon-reload
+systemctl restart docker
+
 docker version
 docker-compose --version
 
