@@ -69,6 +69,8 @@ root@test-node:~# docker-compose up -d
 
 因需要拉取镜像，如网络下载速度慢，可能会执行很长时间，请耐心等待......！
 
+如拉取镜像卡死，先ctrl+c , 再重新docker-compose up -d 即可。
+
 # -----------
 # 验证prometheus stack相关container是否启动成功
 # -----------
