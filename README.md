@@ -100,6 +100,20 @@ f4d6c073168d        prom/pushgateway             "/bin/pushgateway"       About 
 (5) Pushgateway:   http://192.168.33.118:9091/
 ```
 
+```
+如VM里容器运行正常，但如上方式不能访问，请在宿主机重启下VM IP网段所在网卡即可。
+
+$ ifconfig
+
+vboxnet3: flags=8943<UP,BROADCAST,RUNNING,PROMISC,SIMPLEX,MULTICAST> mtu 1500
+	ether 0a:00:27:00:00:03
+	inet 192.168.33.1 netmask 0xffffff00 broadcast 192.168.33.255
+
+$ ifconfig vboxnet3 down
+$ ifconfig vboxnet3 up
+
+```
+
 > ### 附属文档
 
 > #### vagrant管理VM
