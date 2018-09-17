@@ -91,7 +91,7 @@ f4d6c073168d        prom/pushgateway             "/bin/pushgateway"       About 
 ```
 (1) Prometheus:   http://192.168.33.118:9090
 
-(2) Grafana:    http://192.168.33.118:3000/
+(2) Grafana:    http://192.168.33.118:3000/   (user/pwd: admin/admin)
 
 (3) Alertmanager:    http://192.168.33.118:9093/
 
